@@ -1,0 +1,20 @@
+<itsabeastystatewerein version='2.0' sample='1000000'>
+<statenode id='Tree.t:dna9'>((((0:0.10925969985691074,4:0.10925969985691074)12:0.06332526478844665,3:0.17258496464535739)11:0.04542433659287548,1:0.21800930123823287)15:0.014771486035181747,(((2:0.10582440931727255,7:0.10582440931727255)14:0.01654263334336692,8:0.12236704266063947)9:0.03394026586247903,(5:0.08487014364478682,6:0.08487014364478682)10:0.07143716487833168)13:0.07647347875029611)16:0.0</statenode>
+<statenode id='birthRate.t:dna9'>birthRate.t:dna9[1 1] (-Infinity,Infinity): 5.566666433919287 </statenode>
+<statenode id='kappa.s:dna9'>kappa.s:dna9[1 1] (0.0,Infinity): 2.500351634422746 </statenode>
+<statenode id='freqParameter.s:dna9'>freqParameter.s:dna9[4 1] (0.0,1.0): 0.29108544047938567 0.28818519575106843 0.1346339116812446 0.28609545208830134 </statenode>
+</itsabeastystatewerein>
+<!--
+{"operators":[
+{"id":"YuleBirthRateScaler.t:dna9","p":0.0012712501462347418,"accept":22,"reject":39770,"acceptFC":0,"rejectFC":38559,"rejectIv":0,"rejectOp":0},
+{"id":"YuleModelTreeScaler.t:dna9","p":4.2126711308131364E-4,"accept":7,"reject":40207,"acceptFC":0,"rejectFC":38911,"rejectIv":0,"rejectOp":0},
+{"id":"YuleModelTreeRootScaler.t:dna9","p":4.2324168005371525E-4,"accept":11,"reject":39967,"acceptFC":0,"rejectFC":38689,"rejectIv":0,"rejectOp":0},
+{"id":"YuleModelUniformOperator.t:dna9","p":"NaN","accept":810,"reject":398059,"acceptFC":663,"rejectFC":385616,"rejectIv":0,"rejectOp":0},
+{"id":"YuleModelSubtreeSlide.t:dna9","p":8085.075947315619,"accept":0,"reject":198975,"acceptFC":0,"rejectFC":192880,"rejectIv":0,"rejectOp":0},
+{"id":"YuleModelNarrow.t:dna9","p":"NaN","accept":47,"reject":199668,"acceptFC":25,"rejectFC":193279,"rejectIv":0,"rejectOp":0},
+{"id":"YuleModelWide.t:dna9","p":"NaN","accept":2,"reject":40168,"acceptFC":0,"rejectFC":38916,"rejectIv":0,"rejectOp":0},
+{"id":"YuleModelWilsonBalding.t:dna9","p":"NaN","accept":2,"reject":39584,"acceptFC":0,"rejectFC":38349,"rejectIv":0,"rejectOp":0},
+{"id":"KappaScaler.s:dna9","p":0.005613478877470405,"accept":4,"reject":1346,"acceptFC":2,"rejectFC":1311,"rejectIv":0,"rejectOp":0},
+{"id":"FrequenciesExchanger.s:dna9","p":1.7672959619606858,"accept":26,"reject":1326,"acceptFC":13,"rejectFC":1296,"rejectIv":0,"rejectOp":0}
+]}
+-->

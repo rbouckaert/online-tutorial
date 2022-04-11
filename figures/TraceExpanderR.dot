@@ -1,0 +1,22 @@
+digraph {
+nodeT[label="TraceExpander",shape=box];
+
+nodeXML2[label="beast2.xml",color=cornflowerblue, style=filled];
+cycleX_beast2log[label="cycleX_beast2.log",color=cyan3, style=filled];
+cycleX_beast2trees[label="cycleX_beast2.trees",color=cyan3, style=filled];
+beast2log[label="beast2.log",color=cyan3, style=filled];
+beast2trees[label="beast2.trees",color=cyan3, style=filled];
+
+beast2xmlstate[label="beast2.xml.state",color=darkorange2, style=filled];
+beast2xmlstatemulti[label="beast2.xml.state.multi",color=darkorange2, style=filled];
+
+nodeXML2  -> nodeT;
+nodeT -> cycleX_beast2log;
+nodeT -> cycleX_beast2trees;
+nodeT -> beast2xmlstate;
+nodeT -> beast2xmlstatemulti;
+nodeT -> beast2log;
+nodeT -> beast2trees;
+beast2xmlstate -> nodeT;
+beast2xmlstatemulti -> nodeT;
+}

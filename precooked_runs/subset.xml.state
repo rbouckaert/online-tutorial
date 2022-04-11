@@ -1,0 +1,27 @@
+<itsabeastystatewerein version='2.0' sample='1000000'>
+<statenode id='Tree.t:YFV_sequences_subset'>(((((14:0.005811561872990242,32:0.011291013927705026)41:0.0357565777139128,25:0.04704759164161783)54:0.05579667696010264,28:0.10010454257436308)43:0.037467152106598095,((33:0.030917401784581328,12:0.014479045620209602)64:0.03511809321593501,2:0.093432755274545)39:0.030440309269401833)49:0.2333691958504179,((((23:0.016754872761645195,27:0.09620692755614643)35:0.04359248259276152,24:0.057607629327049326)55:0.07740476649665368,((((((5:0.08770537813626705,13:0.008253323341765817)67:0.013055515945928714,34:0.09528144202748098)40:0.06773797874134735,(9:0.07341490872398174,(((6:0.05652663985954194,7:0.05104718780482716)42:0.10767200631873723,8:0.06008905713710666)37:0.01532777576785585,10:0.026101764411847334)51:0.006217253901091402)44:0.026590813414717085)52:0.02763466925984731,4:0.08654450098750313)66:2.504372916206643E-4,(15:0.10537045255312669,(26:0.04522982224111105,11:0.15755858936435574)61:0.06288035633937303)45:0.019780650109682718)59:0.009819464567486252,((1:0.04671019960895775,17:0.005614309197914752)57:0.01796707140063769,3:0.0975539833383389)50:0.062074118138400664)38:0.02469936284007862)53:0.11410090422329267,(((((0:0.051958175450688676,16:0.040999271341031734)36:0.06531264148934665,((29:0.05369545533157563,19:0.01259956492053263)46:0.03695475094039319,30:0.03311595969655409)47:0.0704562271064669)65:2.0794827322756504E-4,22:0.10104040904889117)48:0.016825160560111352,21:0.10690666549934558)60:0.06326601996359305,((20:0.022733597819026785,31:0.030952775901326335)63:0.02180717170133567,18:0.06371885171209157)58:0.10645383375084705)56:0.0679817104744001)62:0.047854987744596955)68:0.0</statenode>
+<statenode id='clockRate.c:YFV_sequences_subset'>clockRate.c:YFV_sequences_subset[1 1] (0.0,Infinity): 0.004189115792644736 </statenode>
+<statenode id='gammaShape.s:YFV_sequences_subset'>gammaShape.s:YFV_sequences_subset[1 1] (0.001,1000.0): 0.0736679065362632 </statenode>
+<statenode id='kappa.s:YFV_sequences_subset'>kappa.s:YFV_sequences_subset[1 1] (0.0,Infinity): 17.50288266833008 </statenode>
+<statenode id='BICEPSPopSize.t:YFV_sequences_subset'>BICEPSPopSize.t:YFV_sequences_subset[1 1] (0.0,Infinity): 1.467170272067511 </statenode>
+<statenode id='freqParameter.s:YFV_sequences_subset'>freqParameter.s:YFV_sequences_subset[4 1] (0.0,1.0): 0.2614926284985765 0.22191475207642491 0.28604060751273386 0.2305520119122647 </statenode>
+</itsabeastystatewerein>
+<!--
+{"operators":[
+{"id":"StrictClockRateScaler.c:YFV_sequences_subset","p":0.5674266681980566,"accept":8469,"reject":26055,"acceptFC":8267,"rejectFC":25786,"rejectIv":0,"rejectOp":0},
+{"id":"strictClockUpDownOperator.c:YFV_sequences_subset","p":0.4979841055910703,"accept":3057,"reject":31492,"acceptFC":3000,"rejectFC":31096,"rejectIv":20962,"rejectOp":20962},
+{"id":"gammaShapeScaler.s:YFV_sequences_subset","p":0.20431020473485018,"accept":447,"reject":714,"acceptFC":439,"rejectFC":702,"rejectIv":9,"rejectOp":9},
+{"id":"KappaScaler.s:YFV_sequences_subset","p":0.347829508781067,"accept":370,"reject":752,"acceptFC":355,"rejectFC":746,"rejectIv":0,"rejectOp":0},
+{"id":"BICEPSEpochTop.t:YFV_sequences_subset","p":0.33078716365528216,"accept":7021,"reject":16116,"acceptFC":6877,"rejectFC":15959,"rejectIv":9884,"rejectOp":9884},
+{"id":"BICEPSEpochAll.t:YFV_sequences_subset","p":0.18742857084353445,"accept":7211,"reject":15870,"acceptFC":7104,"rejectFC":15677,"rejectIv":8776,"rejectOp":8776},
+{"id":"BICEPSTreeFlex.t:YFV_sequences_subset","p":0.08814369276066093,"accept":8798,"reject":14389,"acceptFC":8536,"rejectFC":14326,"rejectIv":7303,"rejectOp":7303},
+{"id":"BICEPSTreeRootScaler.t:YFV_sequences_subset","p":0.2654907612673589,"accept":9823,"reject":25022,"acceptFC":9554,"rejectFC":24833,"rejectIv":5673,"rejectOp":5673},
+{"id":"BICEPSUniformOperator.t:YFV_sequences_subset","p":2.6049020078973952,"accept":107491,"reject":240252,"acceptFC":104604,"rejectFC":238635,"rejectIv":0,"rejectOp":0},
+{"id":"BICEPSSubtreeSlide.t:YFV_sequences_subset","p":0.5329929825255709,"accept":320,"reject":173660,"acceptFC":317,"rejectFC":171325,"rejectIv":86554,"rejectOp":86554},
+{"id":"BICEPSNarrow.t:YFV_sequences_subset","p":"NaN","accept":55852,"reject":118117,"acceptFC":55101,"rejectFC":116645,"rejectIv":9593,"rejectOp":9593},
+{"id":"BICEPSWide.t:YFV_sequences_subset","p":"NaN","accept":359,"reject":34382,"acceptFC":341,"rejectFC":33952,"rejectIv":20349,"rejectOp":20349},
+{"id":"BICEPSWilsonBalding.t:YFV_sequences_subset","p":"NaN","accept":626,"reject":33948,"acceptFC":592,"rejectFC":33492,"rejectIv":4244,"rejectOp":4244},
+{"id":"BICEPSPopSizesScaler.t:YFV_sequences_subset","p":1.4201732423524045,"accept":19992,"reject":38242,"acceptFC":19240,"rejectFC":38203,"rejectIv":0,"rejectOp":0},
+{"id":"FrequenciesExchanger.s:YFV_sequences_subset","p":0.023849465750323394,"accept":288,"reject":866,"acceptFC":278,"rejectFC":856,"rejectIv":0,"rejectOp":0}
+]}
+-->

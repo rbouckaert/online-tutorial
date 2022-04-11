@@ -1,0 +1,34 @@
+digraph {
+nodeB[label="BEAST",shape=box];
+nodeT[label="TraceExpander",shape=box];
+
+nodeXML1[label="beast.xml",color=cornflowerblue, style=filled];
+nodeXML2[label="beast2.xml",color=cornflowerblue, style=filled];
+beastlog[label="beast.log",color=cyan3, style=filled];
+beasttrees[label="beast.trees",color=cyan3, style=filled];
+cycleX_beast2log[label="cycleX_beast2.log",color=cyan3, style=filled];
+cycleX_beast2trees[label="cycleX_beast2.trees",color=cyan3, style=filled];
+beast2log[label="beast2.log",color=cyan3, style=filled];
+beast2trees[label="beast2.trees",color=cyan3, style=filled];
+
+beastxmlstate[label="beast.xml.state",color=darkorange2, style=filled];
+beastxmlstatemulti[label="beast.xml.state.multi",color=darkorange2, style=filled];
+beast2xmlstate[label="beast2.xml.state",color=darkorange2, style=filled];
+beast2xmlstatemulti[label="beast2.xml.state.multi",color=darkorange2, style=filled];
+
+nodeXML1 -> nodeB;
+nodeB -> beastlog;
+nodeB -> beasttrees;
+nodeB -> beastxmlstate;
+nodeB -> beastxmlstatemulti;
+nodeXML1 -> nodeT;
+nodeXML2  -> nodeT;
+beastxmlstate -> nodeT;
+beastxmlstatemulti -> nodeT;
+nodeT -> cycleX_beast2log;
+nodeT -> cycleX_beast2trees;
+nodeT -> beast2xmlstate;
+nodeT -> beast2xmlstatemulti;
+nodeT -> beast2log;
+nodeT -> beast2trees;
+}

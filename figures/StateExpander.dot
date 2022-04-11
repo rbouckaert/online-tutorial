@@ -1,0 +1,30 @@
+digraph {
+nodeB[label="BEAST",shape=box];
+nodeB2[label="BEAST",shape=box];
+nodeT[label="StateExpander",shape=box];
+
+nodeXML1[label="beast.xml",color=cornflowerblue, style=filled];
+beastlog[label="beast.log",color=cyan3, style=filled];
+beasttrees[label="beast.trees",color=cyan3, style=filled];
+beast2log[label="beast2.log",color=cyan3, style=filled];
+beast2trees[label="beast2.trees",color=cyan3, style=filled];
+
+beastxmlstate[label="beast.xml.state",color=darkorange2, style=filled];
+beast2xmlstate[label="beast2.xml.state",color=darkorange2, style=filled];
+
+nodeXML1 -> nodeB;
+nodeB -> beastlog;
+nodeB -> beasttrees;
+nodeB -> beastxmlstate;
+nodeXML1 -> nodeT;
+beastxmlstate -> nodeT;
+nodeXML2[label="beast2.xml",color=cornflowerblue, style=filled];
+nodeXML2  -> nodeT;
+nodeT -> beast2xmlstate;
+
+nodeXML2 -> nodeB2;
+beast2xmlstate -> nodeB2;
+nodeB2 -> beast2xmlstate;
+nodeB2 -> beast2log;
+nodeB2 -> beast2trees;
+}
